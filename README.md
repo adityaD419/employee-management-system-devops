@@ -22,18 +22,6 @@ A full-stack Employee Management System developed using Spring Boot, React.js, M
 
 ## 🛠 Tech Stack
 
-## 🏗 Architecture
-
-```text
-React Frontend
-       │
-       ▼
-Spring Boot REST API
-       │
-       ▼
-      MySQL
-```
-
 ### Backend
 - Java 17
 - Spring Boot
@@ -55,6 +43,17 @@ Spring Boot REST API
 - Docker Compose
 
 ---
+## 🏗 Architecture
+
+```text
+React Frontend
+       │
+       ▼
+Spring Boot REST API
+       │
+       ▼
+      MySQL
+```
 
 ## 📂 Project Structure
 
