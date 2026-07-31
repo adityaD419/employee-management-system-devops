@@ -1,6 +1,6 @@
-# 🚀 Employee Management System (DevOps)
+# 🚀 Full Stack Employee Management System
 
-A Full Stack Employee Management System built using **Spring Boot**, **React**, **MySQL**, **Docker**, and **Docker Compose**.
+A full-stack Employee Management System developed using Spring Boot, React.js, MySQL, Docker, and Docker Compose. The application supports secure JWT-based authentication, employee management, and containerized deployment.
 
 ---
 
@@ -21,6 +21,18 @@ A Full Stack Employee Management System built using **Spring Boot**, **React**, 
 ---
 
 ## 🛠 Tech Stack
+
+## 🏗 Architecture
+
+```text
+React Frontend
+       │
+       ▼
+Spring Boot REST API
+       │
+       ▼
+      MySQL
+```
 
 ### Backend
 - Java 17
@@ -69,35 +81,34 @@ employee-management-system-devops
 
 ## 🚀 Run using Docker
 
+### Build & Start
+
 ```bash
 docker compose up --build -d
 ```
 
-Stop Containers
+### Stop
 
 ```bash
 docker compose down
 ```
 
+### Check Containers
+
+```bash
+docker compose ps
+
 ---
 
-## 🌐 Application URLs
+### 🌐 Application URLs
 
-Frontend
-
-```
-http://localhost:3000
-```
-
-Backend
-
-```
-http://localhost:8080
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8080
 ```
 
 ---
 
-## 📸 Screenshots
+#### 📸 Screenshots
 
 > Login Page
 
@@ -114,6 +125,11 @@ http://localhost:8080
 
 
 ---
+- 🔒 Secure Password Encryption
+- 📝 Employee Attendance Management
+- 💰 Employee Salary Management
+- 📱 Responsive User Interface
+- 📊 RESTful API Architecture
 
 ## 👨‍💻 Author
 
@@ -123,5 +139,7 @@ GitHub:
 https://github.com/adityaD419
 
 ---
+## 📜 License
 
+This project is intended for learning and portfolio purposes.
 ⭐ If you like this project, give it a Star.
