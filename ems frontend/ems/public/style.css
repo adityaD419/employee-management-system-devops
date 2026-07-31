@@ -1,0 +1,1590 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Times New Roman', Times, serif;
+
+
+}
+.table-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.home-container {
+  background-image: url("/img/ems2.jpg");
+  background-size: 100%;
+  
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Ensure the image does not repeat */
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the container */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #c4c1c6; /* Light background color as a fallback */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center text */
+  filter: brightness(1);
+  
+}
+#atten .container {
+  width: 80%;
+  margin: 10vh auto;
+  padding: 20px;
+  background-color: rgba(237, 236, 236, 0.975);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(22, 22, 22, 0.975);
+}
+
+#atten h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#atten .date-picker {
+  margin-bottom: 20px;
+}
+
+#atten .table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#atten .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#atten .table th,
+#atten .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#atten .table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+#atten .table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#atten .form-control {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#atten .btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#atten .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+#atten .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#atten .alert {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+#atten{
+  background-image: url('/img/DashBoardd.avif'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+}
+
+#rate-management-image{
+  background-image: url('/img/DashBoardd.avif'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+}
+/* Rate Management Styles */
+.rate-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 5rem auto; /* Adds space around the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+
+  margin-top: 100px;;
+}
+
+
+.rate-management__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.rate-management__form {
+  width: 100%;
+}
+
+.rate-management__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.rate-management__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.rate-management__input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.rate-management__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.rate-management__submit {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rate-management__submit:hover {
+  background-color: #0056b3;
+}
+
+.rate-management__success {
+  color: #28a745;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rate-management__error {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.home-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(138, 235, 229); /* Background color for content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+#dashboard-image{
+  background-image: url('/img/display.jpg'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+  
+}
+
+.dashboard-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 200px;
+  justify-content: space-between; /* Spread layout across available space */
+}
+.user-table-container {
+  margin-top: 50px;
+  flex: 1; /* Take up available space */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto !important; /* Enable vertical scrolling */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  overflow: scroll;
+  max-height: 400px; /* Limit the height for vertical scrolling */
+}
+.user-table-container.active-dashboard{
+  max-width: 100%;
+
+}
+
+
+.table-buttons-container {
+  display: flex; /* Align buttons horizontally */
+  justify-content: space-between; /* Ensure buttons are spaced evenly or adjust as needed */
+  align-items: center; /* Align buttons vertically in the same line */
+  gap: 10px; /* Add spacing between buttons */
+  margin-top: 10px;
+  
+}
+
+.view-dashboard-button, .edit-button, .delete-button {
+  padding: 5px 10px;
+  font-size: 16px; /* Adjust font size if needed */
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0; /* Remove margins to prevent alignment issues */
+}
+
+.view-dashboard-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.view-dashboard-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.user-details-container {
+  margin-top: 150px;
+  background-color: #ebe0e0; /* White background for the details box */
+  border: 2px solid #ddd; /* Light border around the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+  margin-top: 20px; /* Space above the box */
+  max-width: 80%; /* Adjust width of the box */
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.user-details-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.user-details-container p {
+  font-size: 1em;
+  margin: 10px 0; /* Space between details */
+}
+
+.rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Space between details and the table */
+}
+
+.rates-table th, .rates-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.rates-table th {
+  background-color: #f1f1f1;
+}
+
+.rates-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rates-table tbody tr {
+  background-color: #f1f1f1; /* Add hover effect */
+}
+
+
+
+
+/* Common styling for Login and Sign Up buttons */
+#loginBtn, #signBtn {
+  background-color: rgb(0, 42, 69);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  text-decoration: none; /* Removes underline */
+  margin-right: 10px; /* Adds space between the buttons */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#loginBtn:hover, #signBtn:hover {
+  background-color: rgb(216, 219, 212);
+  color: black;
+  border: 2px solid black;
+}
+
+
+#contactcontain .contact-container {
+
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top of the container */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 150px; /* Adjust padding to fit your design */
+  width: 100%; /* Fill the container's width */
+  height: 100%; /* Fill the container's height */
+  position: relative;
+  background: url('img/Contact-Us.jpg') no-repeat center center; /* Background image */
+  background-size: 1900px 645px; /* Maintain cover */
+  background-position: 40% 25%; /* Adjust the position to show more of the top of the image */
+  /* top: -15px; */
+margin-bottom: -150px;
+}
+
+#contactcontain .contact-form {
+  position: relative;
+  z-index: 2; /* Ensure the form is above the background */
+  max-width: 430px; /* Keep max width for form */
+  background-color: rgba(18, 161, 183, 0.9); /* Slightly transparent */
+  padding: 50px;
+  border-radius: 8px;
+  width: 40%;
+  box-shadow: 0 4px 10px rgba(170, 167, 167, 0.338);
+  margin-right: 150px; /* Add margin to the right if needed */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Apply styling to the button */
+#contactcontain .contact-form button {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px; /* Add padding to make the button bigger */
+  background-color: #083211; /* Button background color */
+  border: 2px solid #007bff; /* Border color */
+  color: white; /* Text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover and click effects */
+}
+
+#contactcontain .contact-form button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+#contactcontain .contact-form button:active {
+  transform: scale(0.98); /* Slight shrink when the button is clicked */
+}
+
+#contactcontain .contact-form button:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); /* Add a blue glow when the button is focused */
+}
+
+
+
+
+
+.login-page {
+  background-color: darkslateblue;
+  background-image: url('/img/Login.jpg'); /* Replace with your image path */
+  background-size: cover; /* Makes the image cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+}
+.sign-page {
+  margin-top: 50px;
+  background-color: darkslateblue;
+  background-image: url('/img/Login.jpg'); /* Replace with your image path */
+  background-size: cover; /* Makes the image cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+}
+#textcontainer {
+  background-image: url("/img/About.png");
+  background-size: 1900px 770px; /* Adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 100px); /* Adjust to leave space for the footer */
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  /* Space at the bottom to prevent overlap */
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+     margin-top: "-60px";
+             margin-bottom:"-170px" !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.text-container {
+  position: absolute;
+  top: 450px;
+  left: 230px;
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for better text visibility */
+  padding: 15px;
+  border-radius: 15px;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(18, 161, 183);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+  z-index: 2000;
+  position: fixed;
+  font-size: 24px;
+}
+
+/* nav label.logo {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 100px;
+  line-height: 80px;
+} */
+
+nav ul {
+  float: right;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 24px;
+}
+
+nav ul li a.active,
+nav a:hover {
+  background-color: rgb(254, 254, 254);
+  border-radius: 20px;
+  color: black !important;
+  cursor: pointer;
+  /* scale: 2 !important; */
+  transition: 0.2s !important;
+}
+
+nav .logo .logo-img{
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#checkbtn {
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  font-size: 30px;
+  color: #fff;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+nav .login-btn,nav .sign-btn{
+  background-color:  rgb(19, 63, 105);
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  gap:2px;
+}
+
+nav .login-btn:hover,nav .sign-btn:hover{
+  background-color: rgb(216, 219, 212);
+  color: black;
+  border: 2px solid black;
+}
+nav .login-container{
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  border-color: #aeccec; /* Darker border on hover */
+}
+nav .login-display{
+  display: none;
+}
+@media (max-width:400px) {
+ 
+}
+
+@media (max-width:895px) {
+  #check:checked~ul{
+      left: -10%;
+      padding: 30px;
+  }
+  #check:checked~ul li{
+     border-bottom: 1px solid #fff;
+     width: 100%;
+  }
+  #checkbtn {
+      display: block;
+  }
+  nav .login-container{
+      display: none;
+  }
+  nav .login-display{
+      display: block;
+  }
+
+  nav ul {
+      width: 100%;
+      height: 100vh;
+      background-color: #f1948a;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      transition: 0.5s;
+      z-index: 2000;
+  }
+
+  nav ul li {
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      margin: 8px;
+      padding: 24px;
+  }
+
+
+
+ 
+}
+
+.user-hover{
+  cursor: pointer !important;
+}
+.user-hover:hover{
+  background-color: #7dc6e1 !important;
+  color: black !important;
+  border: 2px solid rgb(8, 8, 8);
+  scale: 1.05;
+  transition: 0.3s;
+}
+footer {
+  
+  background-color: #343434;
+  padding-top: 50px;
+  margin-right: 0;
+  width: 100%;
+  color: white;
+  font-size: 21px;
+  /* margin-bottom: 10px;  */
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+footer h3 {
+  font-size: 28px;
+  text-align: center;
+}
+
+footer .bottom-bar {
+  background-color: chocolate;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .container .footer-content {
+  width: 100%;
+  text-align: center;
+}
+
+footer .container .footer-content p {
+  width: auto;
+  padding: 7px;
+  margin: auto;
+}
+
+footer .container .footer-content p:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.3s !important;
+  color: #f1948a !important;
+}
+
+footer .container .footer-content .link-list li {
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+  padding: 7px !important;
+}
+
+footer .container .footer-content .link-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .container .footer-content .link-list li a:hover {
+  color: rgb(138, 208, 232);
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+footer .container .footer-content .social-icons {
+  text-align: center;
+  display: inline-block;
+}
+
+footer .container .footer-content .social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 31px;
+  text-align: center;
+}
+
+footer .container .footer-content .social-icons li a:hover {
+  color: #f1948a;
+  scale: 1.1;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 7px !important;
+}
+
+@media (max-width: 895px) {
+  footer {
+      text-align: center;
+  }
+  footer .container {
+      display: inline-block;
+  }
+}
+
+#createEmployee {
+  background-image: url('/img/Login.jpg'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 100vh;
+/* Prevents the image from repeating */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+  
+}
+
+#createEmployee h2 {
+  color: #12161b; /* Darker grey for the heading */
+  text-align: center;
+}
+
+#createEmployee .form-label {
+  font-weight: bold;
+  font-size: 20px !important;
+  color: #495057; /* Darker shade for labels */
+  
+}
+
+#createEmployee .form-control,
+#createEmployee .form-select {
+  border-radius: 6px;
+ 
+}
+#createEmployee .btn {
+  border-radius: 5px;
+  font-size: 20px !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+#createEmployee .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#createEmployee .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  border-color: #aeccec; /* Darker border on hover */
+  transition:0.3s;
+  border-radius: 15px;
+}
+
+#createEmployee .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+#createEmployee .btn-secondary:hover {
+  background-color: #5a6268; 
+  border-color: #545b62; 
+  transition:0.2s;
+  border-radius: 15px;
+}
+
+
+
+.aboutus-card {
+  width: 100%; 
+  height: 100vh; 
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aboutus-card .image-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.aboutus-card .image-box img {
+ margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the whole container */
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+
+.aboutus-card::after {
+  content: "";
+  position: absolute;
+  inset:1 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.aboutus-card .content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:#FFFAFA;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.aboutus-card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.aboutus-card:hover::after {
+margin-top:120px;
+margin-bottom:70px;
+  opacity: 2;
+  inset: 50px;
+}
+
+.aboutus-card:hover .content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+#user-table-container {
+  margin-top: 50px;
+  padding: 20px;
+  width: 1000px;
+  height: 600px; /* or you can use max-height: 600px */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+#user-table-container .user-table-container {
+  max-height: 400px; /* Ensure this is set */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+#user-table-container .table th, .table td {
+  /* text-align: center; */
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+#user-table-container .table th {
+ 
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+#user-table-container .button {
+  margin: 3px;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+#modal-container-button .button {
+  margin: 6px;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.modal-container .edit-button{
+  margin: 6px;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  
+}
+.modal-container .edit-button:hover{
+  transform: scale(1.1); /* Scale the button up by 10% */
+  background-color: #1e7acb; /* Darker red for hover */
+}
+
+#user-table-container .button:hover {
+  transform: scale(1.1); /* Scale the button up by 10% */
+  background-color: #1e7acb; /* Darker red for hover */
+}
+
+#user-table-container .delete-button {
+  background-color: #dc3545;
+  margin: 3px;
+  padding: 10px ; /* Adjusted padding for better appearance */
+  
+  color: white;
+  border: none;
+  border-radius: 6px;
+ 
+}
+#user-table-container .view-dashboard-button {
+  background-color: #21b356;
+  margin: 3px;
+  padding: 10px ; /* Adjusted padding for better appearance */
+  
+  color: white;
+  border: none;
+  border-radius: 6px;
+  
+}
+#user-table-container .delete-button:hover {
+  background-color: #c82333; /* Darker red for hover */
+  transform: scale(1.1); /* Scale the button up by 10% */
+}
+#user-table-container .view-dashboard-button:hover {
+  background-color: #21b356;
+  transform: scale(1.1); /* Scale the button up by 10% */
+}
+#user-table-container .actions-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  align-items: left;
+}
+#mark-attendance {
+  max-width: 500px;
+  
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #decde0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left:700px;
+  font-size: 20px;
+  
+ 
+}
+.attendance-image{
+  background-image: url('/img/Login.jpg'); /* Replace with your image path */
+  background-size: ""; /* Makes the image cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
+#mark-attendance h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#mark-attendance .form-group {
+  margin-bottom: 20px;
+  
+  
+
+}
+
+#mark-attendance label {
+  display: block;
+  margin-bottom: 5px;
+  color: #080101;
+  font-weight: bold;
+  
+  font-size: 20px;;
+}
+
+#mark-attendance input,
+#mark-attendance select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+#mark-attendance input:focus,
+#mark-attendance select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#mark-attendance button {
+  width: 100%;
+  padding: 10px;
+  background-color: #172534;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#mark-attendance button:hover {
+  background-color: #4e6b88;
+}
+
+#mark-attendance .message {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #d9534f;
+}
+/* Container styling for the company stats */
+/* Container styling for the company stats */
+.company-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.company-table th, .company-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.company-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.company-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Row with no data styling */
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive table styling */
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.calculate-salary-image{
+  
+  background-image: url('/img/calculatesalary.jpg'); 
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Ensures it covers the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculate-salary-container {
+  
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top:120px;
+}
+
+#calculate-salary-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#calculate-salary-container .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#calculate-salary-container .form-group label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+#calculate-salary-container .form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#calculate-salary-container .calculate-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#calculate-salary-container .calculate-button:hover {
+  background-color: #45a049;
+}
+
+#calculate-salary-container .result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#calculate-salary-container .result.success {
+  color: green;
+}
+
+#calculate-salary-container .result.error {
+  color: red;
+}
+
+
+.attendance-summary-container {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.attendance-summary {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.attendance-summary h2 {
+  margin-bottom: 20px;
+}
+
+.attendance-summary .form-group {
+  margin-bottom: 15px;
+}
+
+.attendance-summary input {
+  padding: 8px;
+  width: calc(100% - 16px); /* Adjust for padding */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.attendance-summary button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.attendance-summary button:disabled {
+  background-color: #6c757d;
+}
+
+.attendance-summary .error {
+  color: red;
+  margin-top: 10px;
+}
+
+.attendance-summary .summary-result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.attendance-summary .summary-result h3 {
+  margin-bottom: 10px;
+}
+
+#attendanceSummary {
+  background-image: url('/img/calculatesalary.jpg'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+  
+}
+#dashboardimage {
+  background-image: url('/img/DashBoardd.avif'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+  
+}
+#viewcontactimage {
+  background-image: url('/img/DashBoardd.avif'); /* Replace with your image URL */
+  background-size: cover ; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; 
+  width: 100%;
+ 
+/* Prevents the image from repeating */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px auto; /* Adds space above and below the form */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width:100vh; */
+  /* height: 100vh; */
+  margin-bottom:0px; /* Add extra space below the form container */
+  margin-top: 80px; /* Add space above the form */
+  
+}
+/* General container for the page */
+.view-messages-container {
+  margin-top:150px;
+  margin-bottom:200px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 900px;
+margin-left: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.view-messages-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* No messages found text */
+.no-messages {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Table container with scroll */
+.messages-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* Styling for the table */
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.messages-table th, .messages-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table header */
+.messages-table th {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+/* Table row hover effect */
+.messages-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.messages-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+
+/* Feedback Table */
+/* Container with background image */
+#feedback-image {
+  background-image: url('/img/DashBoardd.avif'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Adds space above and below the form */
+  margin-top: 80px; /* Add space above the form */
+  margin-bottom: 0px; /* Add extra space below the form container */
+}
+
+.feedback-container {
+  max-width: 1000px;
+ 
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+  margin-bottom: 100px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Set max height to control size */
+}
+
+/* Feedback Table */
+.feedback-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Table Cells */
+.feedback-table th,
+.feedback-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Header */
+.feedback-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Even Rows */
+.feedback-table-striped tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover Effect on Table Rows */
+.feedback-table-striped tbody tr:hover {
+  background-color: #d1ecf1;
+}
+
+/* No Feedback Message */
+.no-feedback-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+}
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+.profile-container {
+  position: relative;
+}
+
+.profile-details {
+  position: absolute;
+  top: 100%; /* Adjusts position to be just below the navbar/profile container */
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 10;
+  min-width: 230px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  display: none; /* Initially hidden */
+}
+
+.profile-container:hover .profile-details,
+.profile-container.active .profile-details {
+  display: block; /* Display the dropdown */
+  opacity: 1;
+  transform: scaleY(1); /* Expands with a smooth animation */
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-details ul li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-details ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-details ul li.logout {
+  color: red;
+  cursor: pointer;
+}
+
+.profile-details ul li.logout:hover {
+  background-color: #f8d7da;
+}

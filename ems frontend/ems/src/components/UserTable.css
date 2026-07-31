@@ -1,0 +1,29 @@
+.user-table-container {
+    gap: 2px;
+    padding: 70px;
+    margin: auto;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .user-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table-container th,
+  .user-table-container td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 17px; /* Increase font size for table cells */
+  }
+  
+  .user-table-container th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+
+    font-size: 16px; /* Increase font size for table headers */
+  }
+  
+ 

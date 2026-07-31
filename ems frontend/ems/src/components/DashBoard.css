@@ -1,0 +1,98 @@
+.dashboard-background {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Adds space above and below the form */
+    margin-top: 120px; /* Add space above the form */
+}
+
+#dashboard-panel-details {
+    padding: 20px;
+    background-size: 100%; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat;
+    background-image: url('display.jpg'); /* Replace with your image URL */
+    position: relative; /* Position the background image outside the container */
+}
+
+/* Header */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form Label */
+form label { 
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form Input */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2ecbc6;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Result Success */
+.result.success {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6ffe6;
+    border: 1px solid #00cc66;
+    border-radius: 4px;
+    color: green;
+}
+
+/* Summary Details */
+.summary-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #00aaff;
+    border-radius: 4px;
+    text-align: center;
+}
