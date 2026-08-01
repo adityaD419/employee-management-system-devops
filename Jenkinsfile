@@ -21,10 +21,8 @@ pipeline {
        stage('Build Frontend') {
     steps {
         dir('ems frontend/ems') {
-            sh 'pwd'
-            sh 'ls -l'
             sh 'npm install'
-            sh 'npm run build'
+            sh 'CI=false npm run build'
         }
     }
 }
