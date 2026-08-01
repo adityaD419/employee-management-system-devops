@@ -21,7 +21,7 @@ pipeline {
             steps {
                 dir('ems frontend/ems') {
                     sh 'npm install'
-                    sh 'npm run build'
+                    sh 'CI=false npm run build'
                 }
             }
         }
