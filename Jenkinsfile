@@ -18,14 +18,16 @@ pipeline {
     }
 }
 
-        stage('Build Frontend') {
-            steps {
-                dir('ems frontend') {
-                    sh 'npm install'
-                    sh 'npm run build'
-                }
-            }
+       stage('Build Frontend') {
+    steps {
+        dir('ems frontend/ems') {
+            sh 'pwd'
+            sh 'ls -l'
+            sh 'npm install'
+            sh 'npm run build'
         }
+    }
+}
 
         stage('Docker Compose Build') {
             steps {
