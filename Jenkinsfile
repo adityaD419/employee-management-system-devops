@@ -9,13 +9,14 @@ pipeline {
             }
         }
 
-        stage('Build Backend') {
-            steps {
-                dir('newdemo') {
-                    sh './mvnw clean package -DskipTests'
-                }
-            }
+       stage('Build Backend') {
+    steps {
+        dir('newdemo') {
+            sh 'chmod +x mvnw'
+            sh './mvnw clean package -DskipTests'
         }
+    }
+}
 
         stage('Build Frontend') {
             steps {
