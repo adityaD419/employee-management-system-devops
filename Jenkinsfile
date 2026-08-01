@@ -12,7 +12,7 @@ pipeline {
         stage('Build Backend') {
             steps {
                 dir('newdemo') {
-                    bat 'mvn clean package -DskipTests'
+                    sh 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -20,8 +20,8 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('ems frontend/ems') {
-                    bat 'npm install'
-                    bat 'npm run build'
+                    sh 'npm install'
+                    sh 'npm run build'
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
         stage('Docker Compose Build') {
             steps {
                 dir('employee-devops') {
-                    bat 'docker compose build'
+                    sh 'docker compose build'
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
         stage('Deploy Containers') {
             steps {
                 dir('employee-devops') {
-                    bat 'docker compose up -d'
+                    sh 'docker compose up -d'
                 }
             }
         }
