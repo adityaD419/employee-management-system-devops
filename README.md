@@ -45,14 +45,29 @@ A full-stack Employee Management System developed using Spring Boot, React.js, M
 ---
 ## 🏗 Architecture
 
-```text
-React Frontend
-       │
-       ▼
-Spring Boot REST API
-       │
-       ▼
-      MySQL
+Developer
+     │
+     ▼
+ GitHub Repository
+     │
+     ▼
+ Jenkins Pipeline
+     │
+ ┌───┴──────────────┐
+ │                  │
+ ▼                  ▼
+Build Backend     Build Frontend
+(Maven)           (Node.js)
+ │                  │
+ └──────┬───────────┘
+        ▼
+Docker Build
+        ▼
+Docker Compose
+        ▼
+┌─────────────────────────────┐
+│ React │ Spring Boot │ MySQL │
+└─────────────────────────────┘
 ```
 
 ## 📂 Project Structure
