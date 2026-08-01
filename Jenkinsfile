@@ -12,16 +12,16 @@ pipeline {
         stage('Build Backend') {
             steps {
                 dir('newdemo') {
-                    sh 'mvn clean package -DskipTests'
+                    sh './mvnw clean package -DskipTests'
                 }
             }
         }
 
         stage('Build Frontend') {
             steps {
-                dir('ems frontend/ems') {
+                dir('ems frontend') {
                     sh 'npm install'
-                    sh 'CI=false npm run build'
+                    sh 'npm run build'
                 }
             }
         }
@@ -30,6 +30,27 @@ pipeline {
             steps {
                 dir('employee-devops') {
                     sh 'docker compose build'
+                }
+            }
+        }
+
+        stage('Push Images to Docker Hub') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'dockerhub',
+                    usernameVariable: 'DOCKER_USER',
+                    passwordVariable: 'DOCKER_PASS'
+                )]) {
+
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+
+                    sh 'docker tag ems-backend:latest aditya6853/ems-backend:latest'
+                    sh 'docker tag ems-frontend:latest aditya6853/ems-frontend:latest'
+
+                    sh 'docker push aditya6853/ems-backend:latest'
+                    sh 'docker push aditya6853/ems-frontend:latest'
+
+                    sh 'docker logout'
                 }
             }
         }
