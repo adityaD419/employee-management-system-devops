@@ -20,7 +20,7 @@ services:
       context: ../newdemo
       dockerfile: Dockerfile
 
-    image: ems-backend:latest
+    image: aditya6853/ems-backend:latest
     container_name: ems-backend
 
     depends_on:
@@ -35,7 +35,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: root
 
   frontend:
-    image: ems-frontend:latest
+    image: aditya6853/ems-frontend:latest
     container_name: ems-frontend
 
     depends_on:
