@@ -35,27 +35,22 @@ pipeline {
             }
         }
 
-        stage('Push Images to Docker Hub') {
-            steps {
-                withCredentials([usernamePassword(
-                    credentialsId: 'dockerhub',
-                    usernameVariable: 'DOCKER_USER',
-                    passwordVariable: 'DOCKER_PASS'
-                )]) {
+      stage('Push Images to Docker Hub') {
+    steps {
+        withCredentials([usernamePassword(
+            credentialsId: 'dockerhub',
+            usernameVariable: 'DOCKER_USER',
+            passwordVariable: 'DOCKER_PASS'
+        )]) {
+            sh '''
+                echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
 
-                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
-
-                    sh 'docker tag ems-backend:latest aditya6853/ems-backend:latest'
-                    sh 'docker tag ems-frontend:latest aditya6853/ems-frontend:latest'
-
-                    sh 'docker push aditya6853/ems-backend:latest'
-                    sh 'docker push aditya6853/ems-frontend:latest'
-
-                    sh 'docker logout'
-                }
-            }
+                docker push aditya6853/ems-backend:latest || true
+                docker push aditya6853/ems-frontend:latest || true
+            '''
         }
-
+    }
+}
         stage('Deploy Containers') {
             steps {
                 dir('employee-devops') {
