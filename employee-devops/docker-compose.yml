@@ -16,10 +16,6 @@ services:
       - mysql_data:/var/lib/mysql
 
   backend:
-    build:
-      context: ../newdemo
-      dockerfile: Dockerfile
-
     image: aditya6853/ems-backend:latest
     container_name: ems-backend
 
